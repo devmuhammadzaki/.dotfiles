@@ -361,14 +361,8 @@ require("lazy").setup({
 
 			-- language servers
 			local servers = {
-				ts_ls = {},
-				cssls = {},
-				html = {},
-				phpactor = {},
-				pylsp = {},
-				sqlls = {},
-				tailwindcss = {},
-				volar = {},
+				zls = {},
+				clangd = {},
 				lua_ls = {
 					settings = {
 						Lua = {
@@ -581,16 +575,10 @@ require("lazy").setup({
 		-- [[ Configure Treesitter ]]
 		opts = {
 			ensure_installed = {
-				"html",
-				"css",
-				"javascript",
-				"vue",
-				"php",
-				"python",
-				"json",
+				"c",
+				"zig",
 				"bash",
 				"diff",
-				"html",
 				"lua",
 				"luadoc",
 				"markdown",
