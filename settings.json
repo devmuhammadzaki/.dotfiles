@@ -1,0 +1,54 @@
+{
+  "workbench.colorTheme": "One Dark Pro Mix",
+  "workbench.iconTheme": "vscode-great-icons",
+  "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+  "workbench.tree.enableStickyScroll": false,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "window.menuBarVisibility": "toggle",
+  "window.titleBarStyle": "custom",
+  "window.dialogStyle": "custom",
+  "workbench.activityBar.location": "hidden",
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  "remote.restoreForwardedPorts": false,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 12.1,
+  "editor.fontLigatures": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.linkedEditing": true,
+  "editor.stickyScroll.enabled": false,
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.useInlineCompletions": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "vue.inlayHints.vBindShorthand": true,
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "intelephense.diagnostics.undefinedMethods": false,
+  "php.validate.enable": true,
+  "blade.format.enable": true,
+  "[blade]": {
+    "editor.autoClosingBrackets": "always",
+    "editor.defaultFormatter": "onecentlin.laravel-blade"
+  },
+  "extensions.ignoreRecommendations": true
+}
