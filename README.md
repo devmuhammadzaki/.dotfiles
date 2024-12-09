@@ -17,6 +17,7 @@ These are my little and most important configs for my dev setup, and I manage th
    ln -s ~/.dotfiles/config ~/.config/i3/config
    ln -s ~/.dotfiles/.zshrc ~/.zshrc
    ln -s ~/.dotfiles/settings.json ~/.config/Code/User/settings.json
+   sudo ln -s ~/.dotfiles/i3status.conf /etc/i3status.conf
    ```
 
 and you're good to go ;)
