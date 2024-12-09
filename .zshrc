@@ -103,3 +103,6 @@ alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
 alias clh=':> ~/.zsh_history && exit'
+
+# Zig bin
+export PATH=$PATH:/opt/zig
