@@ -106,3 +106,10 @@ alias clh=':> ~/.zsh_history && exit'
 
 # Zig bin
 export PATH=$PATH:/opt/zig
+
+# bun completions
+[ -s "/home/muz4k/.bun/_bun" ] && source "/home/muz4k/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

@@ -21,6 +21,12 @@
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "git.enableSmartCommit": true,
@@ -28,6 +34,11 @@
   "git.confirmSync": false,
   "emmet.triggerExpansionOnTab": true,
   "emmet.useInlineCompletions": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "vue.inlayHints.vBindShorthand": true,
   "[php]": {
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   },
