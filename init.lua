@@ -206,6 +206,23 @@ require("lazy").setup({
 				end,
 			})
 
+			local l = vim.lsp
+			l.handlers["textDocument/hover"] = function(_, result, ctx, config)
+				config = config or { border = "rounded", focusable = true }
+				config.focus_id = ctx.method
+				if not (result and result.contents) then
+					return
+				end
+				local markdown_lines = l.util.convert_input_to_markdown_lines(result.contents)
+				markdown_lines = vim.tbl_filter(function(line)
+					return line ~= ""
+				end, markdown_lines)
+				if vim.tbl_isempty(markdown_lines) then
+					return
+				end
+				return l.util.open_floating_preview(markdown_lines, "markdown", config)
+			end
+
 			local capabilities = vim.lsp.protocol.make_client_capabilities()
 			capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
 
@@ -232,6 +249,7 @@ require("lazy").setup({
 
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
+			---@diagnostic disable-next-line: missing-fields
 			require("mason-lspconfig").setup({
 				handlers = {
 					function(server_name)
@@ -351,7 +369,6 @@ require("lazy").setup({
 		},
 		init = function()
 			vim.cmd.colorscheme("catppuccin")
-			vim.cmd.hi("Comment gui=none")
 		end,
 	},
 	{
