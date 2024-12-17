@@ -1,7 +1,7 @@
 {
-  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.colorTheme": "Monokai Dimmed",
   "workbench.iconTheme": "vscode-great-icons",
-  "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+  "workbench.startupEditor": "none",
   "workbench.tree.enableStickyScroll": false,
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
