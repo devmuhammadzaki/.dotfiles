@@ -227,8 +227,8 @@ require("lazy").setup({
 			capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
 
 			local servers = {
-				clangd = {},
-				zls = {},
+				pylsp = {},
+				ts_ls = {},
 				lua_ls = {
 					settings = {
 						Lua = {
@@ -365,7 +365,7 @@ require("lazy").setup({
 		name = "catppuccin",
 		priority = 1000,
 		opts = {
-			transparent_background = true,
+			transparent_background = false,
 		},
 		init = function()
 			vim.cmd.colorscheme("catppuccin")
@@ -393,8 +393,9 @@ require("lazy").setup({
 			ensure_installed = {
 				"bash",
 				"diff",
-				"c",
-				"zig",
+				"python",
+				"javascript",
+				"typescript",
 				"lua",
 				"luadoc",
 				"markdown",
@@ -403,7 +404,7 @@ require("lazy").setup({
 				"vim",
 				"vimdoc",
 			},
-			auto_install = true,
+			auto_install = false,
 			highlight = {
 				enable = true,
 				additional_vim_regex_highlighting = { "ruby" },
