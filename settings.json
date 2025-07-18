@@ -1,23 +1,22 @@
 {
   "workbench.colorTheme": "Monokai Dimmed",
   "workbench.iconTheme": "vscode-great-icons",
-  "workbench.startupEditor": "none",
+  "workbench.startupEditor": "welcomePageInEmptyWorkbench",
   "workbench.tree.enableStickyScroll": false,
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
   "window.menuBarVisibility": "toggle",
-  "window.dialogStyle": "custom",
   "workbench.activityBar.location": "hidden",
   "breadcrumbs.enabled": false,
   "editor.minimap.enabled": false,
   "remote.restoreForwardedPorts": false,
-  "editor.fontFamily": "CaskaydiaCove Nerd Font",
+  "editor.fontFamily": "JetBrains Mono",
   "editor.fontSize": 12.4,
   "editor.fontLigatures": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.linkedEditing": true,
   "editor.stickyScroll.enabled": false,
-  "terminal.integrated.fontFamily": "monospace",
+  "terminal.integrated.fontFamily": "JetBrains Mono",
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
@@ -44,10 +43,9 @@
   },
   "intelephense.diagnostics.undefinedMethods": false,
   "php.validate.enable": true,
-  "blade.format.enable": true,
   "[blade]": {
     "editor.autoClosingBrackets": "always",
-    "editor.defaultFormatter": "onecentlin.laravel-blade"
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
   },
   "extensions.ignoreRecommendations": true
 }
